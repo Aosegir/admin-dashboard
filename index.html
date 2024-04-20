@@ -8,9 +8,51 @@
 </head>
 <body>
     <div id="container-grid">
-        <div class="container-subsection" id="sidebar"></div>
-        <div class="container-subsection" id="header"></div>
-        <div class="container-subsection" id="main-content"></div>
+
+        <!--  DIV 1 - MAIN CONTENT  -->
+        <div class="container-subsection" id="main-content">
+            <div id="main-content-grid" class="border"></div>
+            <div id="non-project-main" class="border column">
+                <div id="announcements" class="border"></div>
+                <div id="trending" class="border"></div>
+            </div>
+        </div>
+
+        <!--  DIV 2 - HEADER  -->
+        <div class="container-subsection column" id="header">
+            <div class="header-content border">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header-content border">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!--  DIV 3 - SIDEBAR  -->
+        <div class="container-subsection column" id="sidebar">
+            <div class="sidebar-subsection border" id="sidebar-icon">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="sidebar-subsection border" id="main-sidebar-content">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </div>
+            <div class="sidebar-subsection border" id="sub-sidebar-content">
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
