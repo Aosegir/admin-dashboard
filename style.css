@@ -6,6 +6,10 @@
     list-style-type: none;
 }
 
+.flex {
+    display: flex;
+}
+
 .column {
     flex-direction: column;
 }
@@ -14,6 +18,14 @@
     border: 1px solid black;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
 
 /* --  GENERAL GRID LAYOUT  -- */
 
@@ -23,10 +35,6 @@
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
-}
-
-.container-subsection {
-    display: flex;
 }
 
 #sidebar {
@@ -60,7 +68,6 @@
 }
 
 #non-project-main {
-    display: flex;
     flex: 1;
 }
 
@@ -79,6 +86,34 @@
 
 .header-content {
     flex: 1;
+    padding: 0vh 4vw;
+}
+
+#searchbar {
+    width: 50%;
+}
+
+#searchbar input {
+    width: 90%;
+}
+
+#profile {
+    width: 30%;
+}
+
+#greeter {
+    width: 30%;
+}
+
+#post {
+    width: 40%;
+}
+
+#post button {
+    height: 60%;
+    width: 30%;
+    margin: 2vw;
+    border-radius: 25%;
 }
 
 
@@ -86,7 +121,6 @@
 
 .sidebar-subsection {
     padding: 2vw;
-    display: flex;
     justify-content: start;
     align-items: center;
     color: white;

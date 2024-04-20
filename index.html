@@ -10,7 +10,7 @@
     <div id="container-grid">
 
         <!--  DIV 1 - MAIN CONTENT  -->
-        <div class="container-subsection" id="main-content">
+        <div class="container-subsection flex" id="main-content">
             <div id="main-content-grid" class="border">
                 <div></div>
                 <div></div>
@@ -18,30 +18,41 @@
                 <div></div>
                 <div></div>
             </div>
-            <div id="non-project-main" class="border column">
+            <div id="non-project-main" class="border flex column">
                 <div id="announcements" class="border"></div>
                 <div id="trending" class="border"></div>
             </div>
         </div>
 
         <!--  DIV 2 - HEADER  -->
-        <div class="container-subsection column" id="header">
-            <div class="header-content border">
-                <div></div>
-                <div></div>
+        <div class="container-subsection flex column" id="header">
+            <div class="header-content flex space-between">
+                <div class="flex center" id="searchbar">
+                    <input type="text">
+                </div>
+                <div class="flex center" id="profile">
+                    <h3>Profile</h3>
+                </div>
             </div>
-            <div class="header-content border">
-                <div></div>
-                <div></div>
+            <div class="header-content flex space-between">
+                <div class="flex column center" id="greeter">
+                    <p>Hi there,</p>
+                    <h2>Aosegir</h2>
+                </div>
+                <div class="flex center" id="post">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
 
         <!--  DIV 3 - SIDEBAR  -->
-        <div class="container-subsection column" id="sidebar">
-            <div class="sidebar-subsection" id="sidebar-icon">
+        <div class="container-subsection flex column" id="sidebar">
+            <div class="sidebar-subsection flex" id="sidebar-icon">
                 <h2>Dashboard</h2>
             </div>
-            <div class="sidebar-subsection" id="main-sidebar-content">
+            <div class="sidebar-subsection flex" id="main-sidebar-content">
                 <ul>
                     <li>Home</li>
                     <li>Profile</li>
@@ -51,7 +62,7 @@
                     <li>Communities</li>
                 </ul>
             </div>
-            <div class="sidebar-subsection" id="sub-sidebar-content">
+            <div class="sidebar-subsection flex" id="sub-sidebar-content">
                 <ul>
                     <li>Settings</li>
                     <li>Support</li>
